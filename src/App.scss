@@ -1,38 +1,37 @@
+@import "theme.scss";
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: $light;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-hero {
+  font-family: "Bangers", cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App h1 {
+  font-family: "Bangers", cursive;
+}
+
+.App-cover {
+  margin-top: -5.5em;
+  margin-bottom: -6.5em;
+}
+
+.App-title {
+  font-size: calc(12px + 10vmin);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.App-blue-text {
+  color: $blue;
+}
+
+.App-join-button {
+  font-size: calc(12px + 3vmin) !important;
+}
+
+.App-timeline {
+  border-right: 1px solid black;
 }
