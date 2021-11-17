@@ -1,0 +1,17 @@
+.Navbar-icon {
+  color: #212529;
+  font-size: calc(12px + 2.5vmin);
+  margin: 0.2em;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4), 0px 4px 7px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar-twitter:hover {
+  color: #00acee;
+}
+.Navbar-discord:hover {
+  color: #5865f2;
+}
+.Navbar-youtube:hover {
+  color: #e62117;
+}
