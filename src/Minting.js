@@ -1,4 +1,4 @@
-import ethereumImage from "./images/ethereum.png";
+import sketchImage from "./images/sketch.png";
 import "./Minting.scss";
 
 function Minting() {
@@ -10,7 +10,13 @@ function Minting() {
         </div>
         <div className="row mt-3">
           <div className="col-lg-4 d-none d-md-block d-lg-block d-xl-block d-xxl-block text-center my-auto mx-auto">
-            <img src={ethereumImage} className="img-fluid py-3" alt="Ooops.." />
+            <img
+              src={sketchImage}
+              className="img-fluid"
+              alt="Ooops.."
+              width="400"
+              height="400"
+            />
           </div>
           <div className="col-lg-8 col-sm-12">
             <div className="row mb-3">
