@@ -67,6 +67,16 @@ function Header() {
                   <i className="bi bi-discord Icon Icon-discord" />
                 </a>
               </li>
+              <li className="nav-item">
+                <a
+                  href="https://medium.com/@meverse"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  <i className="bi bi-medium Icon" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

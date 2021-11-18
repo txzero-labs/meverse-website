@@ -1,4 +1,4 @@
-import rubyImage from "./images/ruby.png";
+import crownImage from "./images/crown.svg";
 
 function Rarity() {
   return (
@@ -16,7 +16,13 @@ function Rarity() {
         </p>
       </div>
       <div className="col-md-6 col-sm-12 text-center my-auto">
-        <img src={rubyImage} className="img-fluid" alt="Oops.." />
+        <img
+          src={crownImage}
+          className="img-fluid"
+          alt="Oops.."
+          width="350"
+          height="350"
+        />
       </div>
     </div>
   );
