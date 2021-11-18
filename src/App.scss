@@ -5,33 +5,16 @@
   min-height: 100vh;
 }
 
-.App-hero {
-  font-family: "Bangers", cursive;
+.Icon {
+  color: #212529;
 }
 
-.App h1 {
-  font-family: "Bangers", cursive;
+.Icon-twitter:hover {
+  color: #00acee;
 }
-
-.App-cover {
-  margin-top: -5.5em;
-  margin-bottom: -6.5em;
+.Icon-discord:hover {
+  color: #5865f2;
 }
-
-.App-title {
-  font-size: calc(12px + 10vmin);
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-.App-blue-text {
-  color: $blue;
-}
-
-.App-join-button {
-  font-size: calc(12px + 3vmin) !important;
-}
-
-.App-timeline {
-  border-right: 1px solid black;
+.Icon-youtube:hover {
+  color: #e62117;
 }

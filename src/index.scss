@@ -6,3 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a,
+h1,
+h2,
+blockquote {
+  font-family: "Bangers", cursive;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.text-blue {
+  color: $blue;
+}
+.text-orange {
+  color: $orange;
+}
