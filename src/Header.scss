@@ -1,0 +1,8 @@
+@import "theme.scss";
+
+.Header a {
+  font-size: calc(12px + 2vmin);
+}
+.Header a:hover {
+  color: $blue;
+}
