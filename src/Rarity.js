@@ -20,8 +20,8 @@ function Rarity() {
           src={crownImage}
           className="img-fluid"
           alt="Oops.."
-          width="350"
-          height="350"
+          width="300"
+          height="300"
         />
       </div>
     </div>
