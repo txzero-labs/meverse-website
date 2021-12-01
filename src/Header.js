@@ -8,8 +8,17 @@ function Header() {
 
   return (
     <header>
-      <nav className="navbar navbar-expand-sm navbar-light Header">
+      <nav className="navbar navbar-expand-sm navbar-dark Header px-3">
         <div className="container-fluid">
+          <a className="navbar-brand" href="/">
+            <img
+              src="/logo192.png"
+              alt="Oops..."
+              width="60"
+              height="48"
+              className="d-inline-block align-text-middle"
+            />
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,30 +35,22 @@ function Header() {
             id="navbarToggler"
             className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
           >
+            <ul className="navbar-nav me-auto">
+              <li className="nav-item">
+                <a href="/game" className="btn">
+                  Game
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="/whitepaper" className="btn">
+                  Whitepaper
+                </a>
+              </li>
+            </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a href="#about" className="btn">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#rarity" className="btn">
-                  Rarity
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#minting" className="btn">
-                  Minting
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#team" className="btn">
-                  Team
-                </a>
-              </li>
-              <li className="nav-item">
                 <a
-                  href="https://twitter.com/MeVerse_"
+                  href="https://twitter.com/MeverseGame"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
@@ -59,7 +60,7 @@ function Header() {
               </li>
               <li className="nav-item">
                 <a
-                  href="https://discord.gg/gT8gtSPkTc"
+                  href="https://discord.gg/BrRfaupr"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"

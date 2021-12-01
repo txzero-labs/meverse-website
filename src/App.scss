@@ -6,7 +6,7 @@
 }
 
 .Icon {
-  color: $dark;
+  color: $light;
 }
 
 .Icon-twitter:hover {
@@ -17,4 +17,9 @@
 }
 .Icon-youtube:hover {
   color: #e62117;
+}
+
+.List {
+  list-style-type: square;
+  margin-left: 1.5em;
 }

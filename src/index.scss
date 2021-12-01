@@ -14,7 +14,9 @@ blockquote {
   font-family: "Bangers", cursive;
 }
 
-p {
+p,
+li,
+tr {
   font-family: "Lato", sans-serif;
 }
 
@@ -23,4 +25,8 @@ p {
 }
 .text-orange {
   color: $orange;
+}
+
+.Game-font {
+  font-family: "Bangers", cursive;
 }

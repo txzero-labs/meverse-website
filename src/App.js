@@ -1,23 +1,37 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
+import Game from "./Game";
+import Whitepaper from "./Whitepaper";
 import Hero from "./Hero";
 import About from "./About";
 import Rarity from "./Rarity";
-import Minting from "./Minting";
-import "./App.scss";
-import Footer from "./Footer";
+import Roadmap from "./Roadmap";
 import Team from "./Team";
+import Footer from "./Footer";
+import "./App.scss";
 
 function App() {
   return (
-    <div className="container-fluid m-0 App">
+    <div className="container-fluid m-0 p-0 App">
       <Header />
-      <div className="container">
-        <Hero />
-        <About />
-        <Rarity />
-        <Minting />
-        <Team />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="container">
+                <Hero />
+                <About />
+                <Rarity />
+                <Roadmap />
+                <Team />
+              </div>
+            }
+          />
+          <Route path="whitepaper" element={<Whitepaper />} />
+          <Route path="game" element={<Game />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );
