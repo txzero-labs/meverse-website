@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
+import Game from "./Game";
+import Whitepaper from "./Whitepaper";
 import Hero from "./Hero";
 import About from "./About";
-import Whitepaper from "./Whitepaper";
 import Rarity from "./Rarity";
-import Minting from "./Minting";
-import Footer from "./Footer";
+import Roadmap from "./Roadmap";
 import Team from "./Team";
+import Footer from "./Footer";
 import "./App.scss";
 
 function App() {
@@ -22,13 +23,13 @@ function App() {
                 <Hero />
                 <About />
                 <Rarity />
-                <Minting />
+                <Roadmap />
                 <Team />
               </div>
             }
           />
           <Route path="whitepaper" element={<Whitepaper />} />
-          <Route path="game" element={<Whitepaper />} />
+          <Route path="game" element={<Game />} />
         </Routes>
       </BrowserRouter>
       <Footer />

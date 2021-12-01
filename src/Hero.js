@@ -1,4 +1,4 @@
-import heroImage from "./images/hero.svg";
+import heroImage from "./images/hero.png";
 import "./Hero.scss";
 
 function Hero() {
@@ -9,7 +9,7 @@ function Hero() {
           <span className="text-blue">MeVerse Game</span>
         </h1>
       </div>
-      <div className="row">
+      <div className="row w-75 mx-auto">
         <img src={heroImage} className="img-fluid" alt="Ooops.." />
       </div>
       <div className="row">
@@ -25,7 +25,7 @@ function Hero() {
       </div>
       <div className="d-flex pb-5">
         <a
-          href="https://discord.gg/gT8gtSPkTc"
+          href="https://discord.gg/BrRfaupr"
           target="_blank"
           rel="noreferrer"
           className="px-4 Hero-join-button mx-auto"

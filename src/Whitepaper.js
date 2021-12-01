@@ -7,7 +7,7 @@ import "./Whitepaper.scss";
 function Whitepaper() {
   return (
     <div className="col-xl-6 col-lg-10 col-md-10 col-sm-10 Whitepaper mt-5 px-3 mx-auto">
-      <h1 id="whitepaper">MeVerse Game</h1>
+      <h1 id="whitepaper">MeVerse Game Whitepaper</h1>
       <p className="lead">
         MeVerse is the game of risking, lending, and borrowing, where your goal
         is to fulfill the prophecy, collect karma&nbsp;
@@ -61,7 +61,7 @@ function Whitepaper() {
       <h2 id="#tldr" className="mt-5">
         TLDR
       </h2>
-      <ul className="lead Whitepaper-tldr-list">
+      <ul className="lead List">
         <li>
           There are 10,000 Meridians minted for 0.07 ETH that generate daily
           karma $MVK
