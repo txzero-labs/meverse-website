@@ -6,7 +6,7 @@ import "./Whitepaper.scss";
 
 function Whitepaper() {
   return (
-    <div className="col-xl-6 col-lg-10 col-md-10 col-sm-10 Whitepaper mx-auto">
+    <div className="col-xl-6 col-lg-10 col-md-10 col-sm-10 Whitepaper mt-5 px-3 mx-auto">
       <h1 id="whitepaper">MeVerse Game</h1>
       <p className="lead">
         MeVerse is the game of risking, lending, and borrowing, where your goal

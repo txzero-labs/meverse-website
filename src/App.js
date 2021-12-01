@@ -11,7 +11,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <div className="container-fluid m-0 App">
+    <div className="container-fluid m-0 p-0 App">
       <Header />
       <BrowserRouter>
         <Routes>
