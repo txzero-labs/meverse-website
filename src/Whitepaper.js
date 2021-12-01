@@ -195,7 +195,7 @@ function Whitepaper() {
         The Founders are extraordinary Meridians who built most of the MeVerse.
         They are awarded for their founding efforts in the following ways
       </p>
-      <ul className="lead Whitepaper-tldr-list">
+      <ul className="lead List">
         <li>
           Daily karma yield is increased by 20%, from 100 to 120 $MVK / day
         </li>
