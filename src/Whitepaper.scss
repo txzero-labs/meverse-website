@@ -1,0 +1,29 @@
+@import "theme.scss";
+
+.Whitepaper-tldr-list {
+  list-style-type: square;
+  margin-left: 3em;
+}
+
+.Whitepaper {
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
+  a:visited,
+  a:hover {
+    color: $blue;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 0.05em;
+
+    tbody > tr:last-child > td {
+      border-bottom: 0;
+    }
+
+    tbody > tr > td {
+      vertical-align: middle;
+    }
+  }
+}

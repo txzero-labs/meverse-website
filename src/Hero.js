@@ -6,8 +6,7 @@ function Hero() {
     <div className="col d-flex flex-column justify-content-evenly Hero">
       <div className="row">
         <h1 className="Hero-title text-center p-0 m-0">
-          Welcome to <span className="text-blue">Me</span>
-          <span className="text-blue">Verse</span>
+          <span className="text-blue">MeVerse Game</span>
         </h1>
       </div>
       <div className="row">

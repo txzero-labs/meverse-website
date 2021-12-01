@@ -1,11 +1,12 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import About from "./About";
+import Whitepaper from "./Whitepaper";
 import Rarity from "./Rarity";
 import Minting from "./Minting";
-import "./App.scss";
 import Footer from "./Footer";
 import Team from "./Team";
+import "./App.scss";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Rarity />
         <Minting />
+        <Whitepaper />
         <Team />
       </div>
       <Footer />
