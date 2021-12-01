@@ -23,7 +23,7 @@ function Hero() {
           </footer>
         </blockquote>
       </div>
-      <div className="d-flex pb-5">
+      <div className="d-flex">
         <a
           href="https://discord.gg/BrRfaupr"
           target="_blank"
@@ -32,6 +32,11 @@ function Hero() {
         >
           <i className="bi bi-discord" />
           &nbsp; Join us on Discord
+        </a>
+      </div>
+      <div className="row mx-auto">
+        <a href="#about" className="Bounce">
+          <i className="bi bi-arrow-down-circle-fill text-orange fs-4" />
         </a>
       </div>
     </div>
