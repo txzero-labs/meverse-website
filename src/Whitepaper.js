@@ -6,7 +6,7 @@ import "./Whitepaper.scss";
 
 function Whitepaper() {
   return (
-    <div className="col Whitepaper w-75 mx-auto">
+    <div className="col-xl-6 col-lg-10 col-md-10 col-sm-10 Whitepaper mx-auto">
       <h1 id="whitepaper">MeVerse Game</h1>
       <p className="lead">
         MeVerse is the game of risking, lending, and borrowing, where your goal
@@ -216,7 +216,7 @@ function Whitepaper() {
         available on the secondary markets. There are three tiers of virtues,
         each one more powerful and more expensive than the previous.
       </p>
-      <div className="row table-responsive w-75 mx-auto">
+      <div className="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-xs-10 table-responsive mx-auto">
         <table className="table">
           <thead className="text-blue fs-4 Game-font">
             <td className="text-left">Token ID</td>
@@ -245,7 +245,7 @@ function Whitepaper() {
       <p className="lead">
         Multiple virtues can be used to increase karma yield.
       </p>
-      <div className="row table-responsive w-75 mx-auto">
+      <div className="col-10 table-responsive mx-auto">
         <table className="table">
           <tbody>
             <tr>
@@ -294,7 +294,7 @@ function Whitepaper() {
         The MeVerse game token based on ERC-20 protocol is called karma ($MVK)
         with a maximum supply of 1,000,000,000 tokens.
       </p>
-      <div className="row table-responsive w-50 mx-auto">
+      <div className="col-xl-8 col-lg-8 col-md-10 col-sm-10 table-responsive mx-auto">
         <table className="table">
           <tbody>
             <tr>

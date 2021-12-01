@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Hero from "./Hero";
 import About from "./About";
@@ -12,14 +13,24 @@ function App() {
   return (
     <div className="container-fluid m-0 App">
       <Header />
-      <div className="container">
-        <Hero />
-        <About />
-        <Rarity />
-        <Minting />
-        <Whitepaper />
-        <Team />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="container">
+                <Hero />
+                <About />
+                <Rarity />
+                <Minting />
+                <Team />
+              </div>
+            }
+          />
+          <Route path="whitepaper" element={<Whitepaper />} />
+          <Route path="game" element={<Whitepaper />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );
