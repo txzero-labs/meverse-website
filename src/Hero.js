@@ -25,7 +25,7 @@ function Hero() {
       </div>
       <div className="d-flex">
         <a
-          href="https://discord.gg/BrRfaupr"
+          href="https://discord.gg/jNZVD3TGnx"
           target="_blank"
           rel="noreferrer"
           className="px-4 Hero-join-button mx-auto"
