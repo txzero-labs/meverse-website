@@ -50,7 +50,7 @@ function Header() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a
-                  href="https://twitter.com/MeverseGame"
+                  href="https://twitter.com/MeVerse_"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
@@ -60,7 +60,7 @@ function Header() {
               </li>
               <li className="nav-item">
                 <a
-                  href="https://discord.gg/BrRfaupr"
+                  href="https://discord.gg/jNZVD3TGnx"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
