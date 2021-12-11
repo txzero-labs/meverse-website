@@ -7,6 +7,7 @@ import About from "./About";
 import Rarity from "./Rarity";
 import Roadmap from "./Roadmap";
 import Team from "./Team";
+import Showcase from "./Showcase";
 import Footer from "./Footer";
 import "./App.scss";
 
@@ -30,6 +31,7 @@ function App() {
           />
           <Route path="whitepaper" element={<Whitepaper />} />
           <Route path="game" element={<Game />} />
+          <Route path="showcase" element={<Showcase />} />
         </Routes>
       </BrowserRouter>
       <Footer />

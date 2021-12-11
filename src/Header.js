@@ -46,6 +46,11 @@ function Header() {
                   Whitepaper
                 </a>
               </li>
+              <li className="nav-item">
+                <a href="/showcase" className="btn">
+                  Showcase
+                </a>
+              </li>
             </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
