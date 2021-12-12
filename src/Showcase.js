@@ -3,8 +3,8 @@ const images = require.context("./images/showcase", true);
 function Showcase() {
   return (
     <div className="container Showcase mt-5">
-      <div className="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 h-100">
-        {[...Array(56).keys()].map((value, key) => (
+      <div className="row row-cols-auto h-100 justify-content-center">
+        {[...Array(54).keys()].map((value, key) => (
           <div key={key} className="col text-center p-1 rounded">
             <img
               src={images(`./${value}.png`).default}
