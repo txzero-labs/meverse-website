@@ -3,6 +3,7 @@ import mimiImage from "./images/mimi.svg";
 import dakaImage from "./images/daka.svg";
 import anyaImage from "./images/anya.svg";
 import greesinImage from "./images/greesin.svg";
+import artStationLogo from "./images/artstation.svg";
 import "./Team.scss";
 
 function Team() {
@@ -48,6 +49,21 @@ function Team() {
               className="TeamIcon"
             >
               <i className="bi bi-linkedin Icon-linkedin" />
+            </a>
+            &nbsp;&nbsp;
+            <a
+              href="https://www.artstation.com/dakart"
+              target="_blank"
+              rel="noreferrer"
+              className="TeamIcon"
+            >
+              <img
+                src={artStationLogo}
+                className="img-fluid"
+                width="42"
+                height="42"
+                alt="ArtStation"
+              />
             </a>
           </div>
           <div className="col text-center">
