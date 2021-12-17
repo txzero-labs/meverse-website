@@ -33,9 +33,12 @@ class MeridianContract {
     const preSaleActive = await this.isPreSaleActive();
     const cost = await (preSaleActive ? this.preSaleCost() : this.cost());
 
-    return await this.contract.methods
-      .mint(parseInt(encodedTraits, 2))
-      .send({ from: senderAddress, value: cost });
+    return await this.contract.methods.mint(parseInt(encodedTraits, 2)).send({
+      from: senderAddress,
+      value: cost,
+      gas: 350000,
+      gasPrice: "70000000000",
+    });
   }
 
   async remainingTokens(address) {
