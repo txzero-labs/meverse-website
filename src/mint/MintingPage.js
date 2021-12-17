@@ -1,12 +1,11 @@
 import React from "react";
 import mergeImages from "merge-images";
 import MeridianContract from "./MeridianContract";
-import adventurer from "../images/leaders/mimi.png";
-import chad from "../images/leaders/daka.png";
-import commander from "../images/leaders/greesin.png";
-import defender from "../images/leaders/djape.png";
-import thinker from "../images/leaders/anya.png";
-import greesin from "../images/greesin.svg";
+import adventurer from "../images/mimi.svg";
+import chad from "../images/daka.svg";
+import commander from "../images/greesin.svg";
+import defender from "../images/djape.svg";
+import thinker from "../images/anya.svg";
 import "./MintingPage.scss";
 
 const DEFAULT_HAND_ITEM = 28;
@@ -240,7 +239,7 @@ class MintingPage extends React.Component {
     return (
       <div className="col d-flex flex-column justify-content-center h-75 ">
         <div className="row mx-auto">
-          <img src={greesin} className="img-fluid" alt="Ooops" height="468" />
+          <img src={commander} className="img-fluid" alt="Ooops" height="468" />
         </div>
         <div className="row mx-auto w-50 mt-3">
           <h1 className="display-2 text-center">
@@ -307,10 +306,7 @@ class MintingPage extends React.Component {
         paddingRight = 20;
         break;
       case "chad":
-        paddingRight = 40;
-        break;
-      case "commander":
-        paddingRight = 30;
+        paddingRight = 20;
         break;
       default:
         paddingRight = 0;
