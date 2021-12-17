@@ -6,6 +6,7 @@ import chad from "../images/leaders/daka.png";
 import commander from "../images/leaders/greesin.png";
 import defender from "../images/leaders/djape.png";
 import thinker from "../images/leaders/anya.png";
+import greesin from "../images/greesin.svg";
 import "./MintingPage.scss";
 
 const DEFAULT_HAND_ITEM = 28;
@@ -46,6 +47,12 @@ class MintingPage extends React.Component {
     this.state = this.initialState;
   }
 
+  componentDidMount() {
+    contract
+      .remainingTokens(this.props.walletAddress)
+      .then((remainingTokens) => this.setState({ remainingTokens }));
+  }
+
   async handleMint() {
     const {
       group,
@@ -81,14 +88,13 @@ class MintingPage extends React.Component {
 
     try {
       const encodedTraits = await this.generateAsset(body);
-      console.log(encodedTraits);
-      // await this.mint(encodedTraits);
-      // const { metadataHash } = await this.uploadMetadata(encodedTraits);
-      // const metadata = await this.getAssetMetadata(metadataHash);
-      // const remainingTokens = await contract.remainingTokens(
-      //   this.props.walletAddress
-      // );
-      // this.setState({ metadata, remainingTokens });
+      await this.mint(encodedTraits);
+      const { metadataHash } = await this.uploadMetadata(encodedTraits);
+      const metadata = await this.getAssetMetadata(metadataHash);
+      const remainingTokens = await contract.remainingTokens(
+        this.props.walletAddress
+      );
+      this.setState({ metadata, remainingTokens });
     } catch (error) {
       alert(error.message);
     } finally {
@@ -207,9 +213,44 @@ class MintingPage extends React.Component {
   }
 
   render() {
-    return this.state.metadata === null
+    const { remainingTokens, metadata } = this.state;
+
+    if (remainingTokens === null) {
+      return (
+        <div className="d-flex justify-content-center h-100">
+          <div
+            className="spinner-grow fs-3 my-auto text-blue"
+            role="status"
+            style={{ width: "5em", height: "5em" }}
+          ></div>
+        </div>
+      );
+    }
+
+    if (remainingTokens < 1) {
+      return this.renderMaxTokensMinted();
+    }
+
+    return metadata === null
       ? this.renderMintingForm()
       : this.renderMintedAsset();
+  }
+
+  renderMaxTokensMinted() {
+    return (
+      <div className="col d-flex flex-column justify-content-center h-75 ">
+        <div className="row mx-auto">
+          <img src={greesin} className="img-fluid" alt="Ooops" height="468" />
+        </div>
+        <div className="row mx-auto w-50 mt-3">
+          <h1 className="display-2 text-center">
+            You've minted a <span className="text-orange">max</span>
+            &nbsp;number of&nbsp;
+            <span className="text-blue">Meridians </span>during presale!
+          </h1>
+        </div>
+      </div>
+    );
   }
 
   renderMintingForm() {
@@ -886,8 +927,10 @@ class MintingPage extends React.Component {
               </button>
             </div>
           ) : (
-            <p className="display-3 game-font">
-              You minted max number of Meridians during presale!
+            <p className="display-4 game-font w-50 mx-auto">
+              You've minted a <span className="text-orange">max</span>
+              &nbsp;number of&nbsp;
+              <span className="text-blue">Meridians </span>during presale!
             </p>
           )}
         </div>
@@ -913,7 +956,12 @@ class MintingPage extends React.Component {
   }
 
   resetState() {
-    this.setState(this.initialState);
+    this.setState((state, _) => {
+      return {
+        ...this.initialState,
+        remainingTokens: state.remainingTokens,
+      };
+    });
   }
 }
 
