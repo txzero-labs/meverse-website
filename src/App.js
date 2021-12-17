@@ -36,7 +36,7 @@ function App() {
           <Route path="mint" element={<MintApp />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
