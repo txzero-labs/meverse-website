@@ -1,0 +1,36 @@
+@import "../theme.scss";
+
+.ConnectMetaMask button > i {
+  font-family: "Bangers", cursive !important;
+  font-style: normal;
+}
+
+.ConnectMetaMaskButton {
+  display: inline-block;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  color: $light;
+  background-color: $orange;
+  border: 0.1em solid $orange;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.ConnectMetaMaskButton:hover {
+  color: $orange;
+  background-color: transparent;
+}
+
+.MetaMaskLink {
+  transition: all 0.2s;
+  box-sizing: border-box;
+  box-shadow: none;
+  color: $orange;
+  text-decoration: none;
+  -moz-text-decoration: none;
+  -webkit-box-shadow: none;
+}
+.MetaMaskLink:hover {
+  color: $blue;
+}

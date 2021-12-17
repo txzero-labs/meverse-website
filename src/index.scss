@@ -10,8 +10,9 @@ body {
 a,
 h1,
 h2,
-blockquote {
-  font-family: "Bangers", cursive;
+blockquote,
+button {
+  font-family: "Bangers", cursive !important;
 }
 
 p,
@@ -27,6 +28,7 @@ tr {
   color: $orange;
 }
 
-.Game-font {
+.Game-font,
+.game-font {
   font-family: "Bangers", cursive;
 }

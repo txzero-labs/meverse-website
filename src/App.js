@@ -9,6 +9,7 @@ import Roadmap from "./Roadmap";
 import Team from "./Team";
 import Showcase from "./Showcase";
 import Footer from "./Footer";
+import MintApp from "./mint/MintApp";
 import "./App.scss";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="whitepaper" element={<Whitepaper />} />
           <Route path="game" element={<Game />} />
           <Route path="showcase" element={<Showcase />} />
+          <Route path="mint" element={<MintApp />} />
         </Routes>
       </BrowserRouter>
       <Footer />
