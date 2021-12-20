@@ -75,7 +75,7 @@ class MeridianContract {
   }
 
   async isFreeMintAddress(address) {
-    return (await this.contract.methods.freeMintAddr(address).call()) === 1;
+    return !!(await this.contract.methods.freeMintAddr(address).call());
   }
 
   async estimatedGasPrice() {
