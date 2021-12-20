@@ -51,6 +51,11 @@ function Header() {
                   Showcase
                 </a>
               </li>
+              <li className="nav-item">
+                <a href="/mint" className="btn">
+                  Mint
+                </a>
+              </li>
             </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
