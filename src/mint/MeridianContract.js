@@ -5,6 +5,8 @@ import meridianContract from "./contracts/meridian.sol/Meridian.json";
 // MetaMask is supported web3 provider.
 Contract.setProvider(Web3.givenProvider);
 
+const web3 = new Web3(Web3.givenProvider);
+
 class MeridianContract {
   constructor() {
     this.contract = new Contract(
@@ -30,15 +32,25 @@ class MeridianContract {
   }
 
   async mint({ senderAddress, encodedTraits }) {
-    const preSaleActive = await this.isPreSaleActive();
-    const cost = await (preSaleActive ? this.preSaleCost() : this.cost());
+    const freeMint = await this.isFreeMintAddress(senderAddress);
+    const gasPrice = await this.estimatedGasPrice();
+    const traits = parseInt(encodedTraits, 2);
 
-    return await this.contract.methods.mint(parseInt(encodedTraits, 2)).send({
-      from: senderAddress,
-      value: cost,
-      gas: 350000,
-      gasPrice: "70000000000",
-    });
+    if (freeMint) {
+      return await this.contract.methods
+        .freeMint(traits)
+        .send({ from: senderAddress, gas: 350000, gasPrice });
+    } else {
+      const preSaleActive = await this.isPreSaleActive();
+      const cost = await (preSaleActive ? this.preSaleCost() : this.cost());
+
+      return await this.contract.methods.mint(traits).send({
+        from: senderAddress,
+        value: cost,
+        gas: 350000,
+        gasPrice,
+      });
+    }
   }
 
   async remainingTokens(address) {
@@ -60,6 +72,14 @@ class MeridianContract {
 
   async tokenBalance(address) {
     return await this.contract.methods.balanceOf(address).call();
+  }
+
+  async isFreeMintAddress(address) {
+    return (await this.contract.methods.freeMintAddr(address).call()) === 1;
+  }
+
+  async estimatedGasPrice() {
+    return await web3.eth.getGasPrice();
   }
 }
 
