@@ -3,7 +3,6 @@ import mimiImage from "./images/mimi.svg";
 import dakaImage from "./images/daka.svg";
 import anyaImage from "./images/anya.svg";
 import greesinImage from "./images/greesin.svg";
-import artStationLogo from "./images/artstation.svg";
 import "./Team.scss";
 
 function Team() {
@@ -24,14 +23,6 @@ function Team() {
               ways to improve myself and also challenging problems that will
               push me out of my comfort zone. Web 3.0 is next on my list.
             </p>
-            <a
-              href="https://www.linkedin.com/in/predrag-njegovanovic/"
-              target="_blank"
-              rel="noreferrer"
-              className="TeamIcon"
-            >
-              <i className="bi bi-linkedin Icon-linkedin" />
-            </a>
           </div>
           <div className="col text-center">
             <img src={dakaImage} alt="Oops.." width="200" height="200" />
@@ -42,29 +33,6 @@ function Team() {
               beliefs, culture, and purpose faster, better, and more deeply than
               any other method of communication.
             </p>
-            <a
-              href="https://www.linkedin.com/in/david-dubajic-8b9920197/"
-              target="_blank"
-              rel="noreferrer"
-              className="TeamIcon"
-            >
-              <i className="bi bi-linkedin Icon-linkedin" />
-            </a>
-            &nbsp;&nbsp;
-            <a
-              href="https://www.artstation.com/dakart"
-              target="_blank"
-              rel="noreferrer"
-              className="TeamIcon"
-            >
-              <img
-                src={artStationLogo}
-                className="img-fluid"
-                width="42"
-                height="42"
-                alt="ArtStation"
-              />
-            </a>
           </div>
           <div className="col text-center">
             <img src={mimiImage} alt="Oops.." width="200" height="200" />
@@ -74,14 +42,6 @@ function Team() {
               fundamentals. Looking for new things, hungry for experience.
               Believes that Virtual Worlds are a new frontier.
             </p>
-            <a
-              href="https://www.linkedin.com/in/milivoje-popovac-93344217b/"
-              target="_blank"
-              rel="noreferrer"
-              className="TeamIcon"
-            >
-              <i className="bi bi-linkedin Icon-linkedin" />
-            </a>
           </div>
           <div className="col text-center">
             <img src={anyaImage} alt="Oops.." width="200" height="200" />
@@ -91,23 +51,6 @@ function Team() {
               new ways to improve things. Currently focused on building Web 3.0,
               block by block.
             </p>
-            <a
-              href="https://www.linkedin.com/in/nemanja-milicevic"
-              target="_blank"
-              rel="noreferrer"
-              className="TeamIcon"
-            >
-              <i className="bi bi-linkedin Icon-linkedin" />
-            </a>
-            &nbsp;&nbsp;
-            <a
-              href="https://twitter.com/itz_nemanja"
-              target="_blank"
-              rel="noreferrer"
-              className="TeamIcon"
-            >
-              <i className="bi bi-twitter Icon-twitter" />
-            </a>
           </div>
           <div className="col text-center">
             <img src={greesinImage} alt="Oops.." width="200" height="200" />
@@ -116,14 +59,6 @@ function Team() {
               Leader. Marching with my team on the frontiers of the Metaverse,
               driven by innovation.
             </p>
-            <a
-              href="https://twitter.com/FilipBaturan"
-              target="_blank"
-              rel="noreferrer"
-              className="TeamIcon"
-            >
-              <i className="bi bi-twitter Icon-twitter" />
-            </a>
           </div>
         </div>
       </div>
